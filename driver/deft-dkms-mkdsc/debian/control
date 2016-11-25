@@ -1,0 +1,13 @@
+Source: deft-dkms
+Section: misc
+Priority: optional
+Maintainer: Christian Petrov <christian.petrov@outlook.com>
+Build-Depends: debhelper (>= 7), dkms
+Standards-Version: 3.9.7
+
+Package: deft-dkms
+Architecture: all
+Depends: dkms (>= 1.95), ${misc:Depends}
+Description: LKM for Elecom DEFT
+ A Linux loadable kernel module to add support for the 3 function buttons
+ of Elecom DEFT trackballs.

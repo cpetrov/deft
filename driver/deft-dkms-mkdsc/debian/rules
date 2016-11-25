@@ -1,0 +1,20 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+NAME=deft
+DEB_NAME=$(NAME)-dkms
+VERSION=$(shell dpkg-parsechangelog |grep ^Version:|cut -d ' ' -f 2)
+
+%:
+	dh $@ --with dkms
+
+override_dh_install:
+	dh_install $(NAME)-$(VERSION)/* usr/src/$(NAME)-$(VERSION)/
+	find "debian/$(DEB_NAME)/usr/src/$(NAME)-$(VERSION)" -type f | xargs chmod 644
+	find "debian/$(DEB_NAME)/usr/src/$(NAME)-$(VERSION)" -name "*.sh" | xargs chmod 755
+
+override_dh_dkms:
+	dh_dkms -V $(VERSION)
+
+override_dh_auto_build:
+override_dh_auto_install:
