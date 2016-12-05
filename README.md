@@ -13,9 +13,9 @@ Kernel headers
 ### Ubuntu
 
 ```
-$ sudo add-apt-repository ppa:christian-petrov/deft
-$ sudo apt-get update
-$ sudo apt-get install deft-dkms
+# add-apt-repository ppa:christian-petrov/deft
+# apt-get update
+# apt-get install deft-dkms
 ```
 
 ### Manual
@@ -39,7 +39,7 @@ $ cd driver
 ### Ubuntu/Debian
 
 ```
-$ sudo apt-get remove deft-dkms
+# apt-get remove deft-dkms
 ```
 
 ### Manual
