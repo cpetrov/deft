@@ -18,6 +18,13 @@ Kernel headers
 # apt-get install deft-dkms
 ```
 
+### Arch Linux
+
+```
+$ yaourt deft-dkms
+```
+... or use your favorite [AUR helper](https://wiki.archlinux.org/index.php/AUR_helpers) or [install the package manually](https://wiki.archlinux.org/index.php/Arch_User_Repository#Installing_packages).
+
 ### Manual
 
 ```
@@ -41,6 +48,12 @@ $ cd driver
 ```
 # apt-get remove deft-dkms
 ```
+
+### Arch Linux
+
+```
+# pacman -R deft-dkms
+``` 
 
 ### Manual
 
