@@ -4,6 +4,8 @@ A Linux LKM to add support for the 3 function buttons of Elecom DEFT trackballs.
 
 Based on a [kernel patch](https://patchwork.kernel.org/patch/9217713/) by Yuxuan Shui.
 
+**NOTE: Only needed for Linux <4.12. This patch has already been integrated in recent Linux kernels.**
+
 ## Requirements
 Linux 4.2+
 Kernel headers
